@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************/
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    
+}
+
+.converterContainer {
+    background: rgb(163, 206, 249);
+    border-radius: 10px;
+    padding: 25px 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.converterContainer h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.converterContainer .inputContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(163, 206, 249)
+    border-radius: 4px;
+    width: 100%;
+}
+
+.converterContainer .inputContainer input {
+    border: none;
+    width: 150px;
+    outline: none;
+    font-size: 20px;
+    background: rgb(163, 206, 249);
+    border: 2px solid rgb(46, 74, 138);
+    border-radius: 2px;
+}
+
+.converterContainer .inputContainer select  {
+    border: none;
+    width: 200px;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(163, 206, 249);
+}
+
+.converterContainer .inputContainer input:focus-within {
+    border-color: #828a99;
+}
+
+.converterContainer .arrow {
+    color: solid black;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.converterContainer .result {
+ font-size: 20px; 
+ margin-top: 20px;
+ font-weight: bold;  
+}
+
+@media screen and (max-width:440px) {
+    .converterContainer {
+        width: 50%;
+        margin: 0 auto;
+    }    
+    
+    .converterContainer h1{
+        font-size: 20px;
+    }
+
+    .converterContainer .inputContainer , .converterContainer .outputContainer {
+        border: none;
+    }
+
+    .converterContainer .inputContainer input, .converterContainer .outputContainer input , .converterContainer .inputContainer select, .converterContainer .outputContainer select {
+        border: 1px solid rgb(163, 206, 249);
+        margin-block: 4px;
+        width: 100%;
+
+    }
+
+}

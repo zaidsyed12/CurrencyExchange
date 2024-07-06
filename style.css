@@ -55,7 +55,9 @@ body {
     min-height: 100vh;
     background-image: url(bg.jpg);
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .converterContainer {
@@ -64,6 +66,8 @@ body {
     padding: 25px 25px;
     line-height: 30px;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .converterContainer h1 {
@@ -93,7 +97,7 @@ body {
 
 .converterContainer .inputContainer select  {
     border: none;
-    width: 200px;
+    width: 280px;
     outline: none;
     font-size: 20px;
     padding: 10px;
